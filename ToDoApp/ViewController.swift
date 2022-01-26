@@ -14,12 +14,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initView()
+        
        
     }
     func initView(){
         bottomView.layer.cornerRadius = 20
         bottomView.layer.masksToBounds = true
-        bottomView.layer.maskedCorners = [ .layerMinXMinYCorner,.layerMaxXMinYCorner]
+        bottomView.layer.maskedCorners = [ .layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
 
     @IBAction func skipButton(_ sender: Any) {
